@@ -1,0 +1,175 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body{
+	background-color: hsl(232, 71%, 96%);
+	background-image: url('img/bg-top.svg'), url('img/bg-bottom.svg');
+	background-repeat: no-repeat;
+	background-position: 
+	top right,
+	bottom left;
+}
+
+.header{
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 5rem;
+}
+
+.title{
+	font-size: 2rem;
+	font-weight: 700;
+	color: rgb(117, 109, 126);
+	margin-bottom: 2rem;
+}
+
+.nav{
+	display: inline-flex;
+	align-items:center;
+}
+
+p{
+	color:rgb(173, 172, 174);
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.toggle__area{
+	display: inline-flex;
+	align-items: center;
+	width: 3.5rem;
+	height: 2rem;
+	position: relative;
+	background:linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+	border: none;
+	border-radius: 1rem;
+	margin: 0 2rem;
+	cursor: pointer;
+}	
+
+.toggle__btn{
+	width: 1.5rem;
+	height: 1.5rem;
+	position: relative;
+	background-color: #fff;
+	margin: 5%;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.toggle__area.monthly{
+	justify-content: flex-end;
+	align-content: flex-end;
+}
+
+main{
+	width: 100%;
+	margin: 0 auto;
+	padding: 5rem;
+}
+
+section{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card{
+	min-height: 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2rem;
+	background-color: white;
+	border-radius: .8rem;
+}
+
+.card__title{
+	font-size: 20px;
+}
+
+.price{
+	display: inline-flex;
+	align-items: center;
+	font-size: 35px;
+	font-weight: 700;
+	color: rgb(85, 81, 95);
+	margin: 1.5rem 0;
+}
+
+.num{
+	margin-left: .8rem;
+	font-size: 65px;
+}
+
+.card__list{
+	list-style: none;
+	width: 90%;
+	text-align: center;
+	margin-bottom: 2.5rem;
+}
+
+.card__item{
+	padding: 1rem 0;
+	border-top: 1px solid rgb(173, 172, 174);
+}
+
+.card__item:last-child{
+	border-bottom: 1px solid rgb(173, 172, 174);
+}
+
+.card__btn{
+	background:linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+	border: 1px solid transparent;
+	border-radius: .2rem;
+	padding: .8rem 5rem;
+	text-align: center;
+	text-transform: uppercase;
+	color:#fff;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	cursor: pointer;
+	transition-property: background, border, color;
+	transition-duration: .2s;
+	transition-timing-function: ease-in;
+}
+
+.card__btn:hover{
+	background: transparent;
+	border:1px solid hsl(234, 14%, 74%);
+	color: hsl(237,63%, 64%);
+}
+
+.prof{
+	background:linear-gradient(hsl(236, 72%, 79%), hsl(237,63%, 64%));
+	padding: 3.5rem 2rem;
+}
+
+.prof p, .prof .price, .prof .num{
+	color: #fff;
+}
+
+.prof .card__btn{
+	background: #fff;
+	padding: 1rem 7rem;
+	border-radius: .5rem;
+	color:hsl(237, 63%, 64%);
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.prof .card__btn:hover{
+	background: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+}
